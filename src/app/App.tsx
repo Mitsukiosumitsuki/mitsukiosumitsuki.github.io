@@ -21,6 +21,7 @@ import avatarImage from "@/imports/icon.png";
 import coconalaImage from "@/imports/__________2026-06-12_182642.png";
 import questImage from "@/imports/quest_.png";
 import gabuImage from "@/imports/00_top_re20251025.png";
+import buffyImage from "@/imports/HL-axOba4AAQhxF.jpeg";
 
 function NextArrow(props: any) {
   const { onClick } = props;
@@ -90,8 +91,8 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-5xl mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              <span className="sm:hidden">桃月みつきの<br />おすみつき</span>
-              <span className="hidden sm:inline">桃月みつきのおすみつき</span>
+              <span className="sm:hidden">桃月みつきの<br />お墨つき</span>
+              <span className="hidden sm:inline">桃月みつきのお墨つき</span>
             </h1>
             <div className="space-y-4 text-lg text-gray-700 mb-8">
               <p>Unityが全然分からない…</p>
@@ -192,6 +193,12 @@ export default function App() {
                 <PortfolioCard
                   image={gabuImage}
                   title="天兎ひなた様制作アバター「がぶ」のVRChatセットアップ"
+                />
+              </div>
+              <div className="px-3">
+                <PortfolioCard
+                  image={buffyImage}
+                  title="ふてみみ様製作アバター「バフィー」のギミック作成"
                 />
               </div>
               <div className="px-3">
