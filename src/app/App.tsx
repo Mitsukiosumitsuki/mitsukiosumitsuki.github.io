@@ -51,6 +51,27 @@ export default function App() {
   const [isPortrait, setIsPortrait] = useState(false);
 
   useEffect(() => {
+    document.title = "桃月みつきのおすみつき | VRChatアバター改変代行";
+    const setMeta = (name: string, content: string, prop = false) => {
+      const attr = prop ? "property" : "name";
+      let el = document.querySelector(`meta[${attr}="${name}"]`);
+      if (!el) { el = document.createElement("meta"); el.setAttribute(attr, name); document.head.appendChild(el); }
+      el.setAttribute("content", content);
+    };
+    setMeta("description", "VRChatエンジニア・桃月みつきによるアバター改変代行サービス。衣装着せ替え・軽量化・Quest対応・ギミック実装など。ココナラ実績150件以上。");
+    setMeta("keywords", "VRChat,アバター改変,改変代行,桃月みつき,Quest対応,軽量化,ギミック,Unity");
+    setMeta("author", "桃月みつき");
+    setMeta("robots", "index, follow");
+    setMeta("og:type", "website", true);
+    setMeta("og:title", "桃月みつきのおすみつき | VRChatアバター改変代行", true);
+    setMeta("og:description", "VRChatエンジニア・桃月みつきによるアバター改変代行サービス。衣装着せ替え・軽量化・Quest対応・ギミック実装など。ココナラ実績150件以上。", true);
+    setMeta("og:url", "https://mitsukiosumitsuki.github.io/", true);
+    setMeta("twitter:card", "summary");
+    setMeta("twitter:title", "桃月みつきのおすみつき | VRChatアバター改変代行");
+    setMeta("twitter:description", "VRChatエンジニア・桃月みつきによるアバター改変代行。ギミック・軽量化・Quest対応など実績150件以上。");
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       setIsPortrait(window.innerHeight > window.innerWidth);
     };
