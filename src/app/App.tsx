@@ -394,7 +394,7 @@ function ServiceCard({
 function PortfolioCard({
   image,
   title,
-  objectFit = "cover",
+  objectFit = "contain",
 }: {
   image: string;
   title: string;
@@ -406,7 +406,7 @@ function PortfolioCard({
         <ImageWithFallback
           src={image}
           alt={title}
-          className={`w-full h-full hover:scale-105 transition-transform ${objectFit === "contain" ? "object-contain" : "object-cover"}`}
+          className={`w-full h-full hover:scale-105 transition-transform ${objectFit === "cover" ? "object-cover" : "object-contain"}`}
         />
       </div>
       <div className="p-4 flex-grow flex items-center justify-center">
