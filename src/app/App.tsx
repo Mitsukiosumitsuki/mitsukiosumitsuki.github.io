@@ -90,8 +90,8 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-5xl mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              <span className="sm:hidden">桃月みつきの<br />お墨つき</span>
-              <span className="hidden sm:inline">桃月みつきのお墨つき</span>
+              <span className="sm:hidden">桃月みつきの<br />おすみつき</span>
+              <span className="hidden sm:inline">桃月みつきのおすみつき</span>
             </h1>
             <div className="space-y-4 text-lg text-gray-700 mb-8">
               <p>Unityが全然分からない…</p>
