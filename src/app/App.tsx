@@ -62,6 +62,7 @@ export default function App() {
     setMeta("keywords", "VRChat,アバター改変,改変代行,桃月みつき,Quest対応,軽量化,ギミック,Unity");
     setMeta("author", "桃月みつき");
     setMeta("robots", "index, follow");
+    setMeta("google-site-verification", "BBTbGP60FZt-n36Ztb0trlhCHUkeS1uVhpWPwHfMlv0");
     setMeta("og:type", "website", true);
     setMeta("og:title", "桃月みつきのおすみつき | VRChatアバター改変代行", true);
     setMeta("og:description", "VRChatエンジニア・桃月みつきによるアバター改変代行サービス。衣装着せ替え・軽量化・Quest対応・ギミック実装など。ココナラ実績150件以上。", true);
